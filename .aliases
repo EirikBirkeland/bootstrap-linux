@@ -1,2 +1,4 @@
 alias sl="ls"
 alias pico="vim"
+alias npmbump="npm version patch && npm version publish"
+alias ns="npm start"
