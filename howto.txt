@@ -1,0 +1,2 @@
+How to mount a virtualbox share:
+https://serverfault.com/questions/674974/how-to-mount-a-virtualbox-shared-folder
