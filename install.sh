@@ -4,14 +4,15 @@ sudo apt-get update && sudo apt-get upgrade -y
 echo "Installing commonly used packages:"
 sudo apt-get install htop vim ssh npm nmap git tmux curl zsh
 
-# Installing oh-my-zsh
+# Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Setting up ~/.npm-global
+# Set up ~/.npm-global
 mkdir ~/.npm-global
-# TODO: remove next line if next install succeeds without it (nvm doesn't like it)
 npm config set prefix '~/.npm-global'
 export PATH=~/.npm-global/bin:$PATH
-source ~/.zshrc
 
-echo "Go manually to https://github.com/creationix/nvm for the latest version of NVM"
+echo "Install nodenv at:"
+echo "https://github.com/nodenv/nodenv/blob/master/README.md#installation"
+
+source ~/.zshrc
