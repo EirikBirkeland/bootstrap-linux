@@ -10,8 +10,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # Setting up ~/.npm-global
 mkdir ~/.npm-global
 # TODO: remove next line if next install succeeds without it (nvm doesn't like it)
-# npm config set prefix '~/.npm-global'
+npm config set prefix '~/.npm-global'
 export PATH=~/.npm-global/bin:$PATH
-source ~/.source
+source ~/.zshrc
 
 echo "Go manually to https://github.com/creationix/nvm for the latest version of NVM"
