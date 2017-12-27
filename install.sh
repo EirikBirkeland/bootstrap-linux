@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Update & upgrade:"
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 echo "Installing commonly used packages:"
-sudo apt-get install htop vim ssh npm nmap git tmux
+sudo apt-get install htop vim ssh npm nmap git tmux curk
 
 # Installing oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
