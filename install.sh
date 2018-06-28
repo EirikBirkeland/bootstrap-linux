@@ -12,7 +12,4 @@ mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 export PATH=~/.npm-global/bin:$PATH
 
-echo "Install nodenv at:"
-echo "https://github.com/nodenv/nodenv/blob/master/README.md#installation"
-
 source ~/.zshrc
