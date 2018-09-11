@@ -18,6 +18,6 @@ source ~/.zshrc
 
 echo "Installing NVM for Nodejs"
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-
+echo "You may need to manually move some commands from .bashrc to .zshrc"
 git config --global user.name "Eirik Birkeland"
 git config --global user.email "birketrans@gmail.com"
