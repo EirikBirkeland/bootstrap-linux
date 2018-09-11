@@ -2,7 +2,9 @@
 echo "Update & upgrade:"
 sudo apt-get update && sudo apt-get upgrade -y
 echo "Installing commonly used packages ..."
-sudo apt-get install terminator htop vim ssh npm nmap git tmux curl zsh
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get install terminator htop vim ssh npm nmap git tmux curl zsh yarn
 
 echo "Installing oh-my-zsh ..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
