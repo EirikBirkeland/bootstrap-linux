@@ -12,7 +12,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo "Setting up ~/.npm-global ..."
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
-export PATH=~/.npm-global/bin:$PATH
+echo "export PATH=~/.npm-global/bin:$PATH" >> ~/.zshrc
 
 source ~/.zshrc
 
